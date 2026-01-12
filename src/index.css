@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-retro-purple font-body text-gray-900;
+  }
+}
+
+@layer components {
+  .btn-retro {
+    @apply px-6 py-3 rounded-full border-3 border-black font-bold transition-all duration-200 hover:translate-x-1 hover:translate-y-1 hover:shadow-none;
+  }
+
+  .btn-primary {
+    @apply btn-retro bg-retro-pink text-black shadow-retro;
+  }
+
+  .btn-secondary {
+    @apply btn-retro bg-retro-yellow text-black shadow-retro;
+  }
+
+  .btn-white {
+    @apply btn-retro bg-white text-black shadow-retro;
+  }
+
+  .card-retro {
+    @apply bg-white rounded-3xl border-3 border-black shadow-retro p-6 transition-all duration-200 hover:translate-x-1 hover:translate-y-1 hover:shadow-retro-sm;
+  }
+
+  .input-retro {
+    @apply w-full px-4 py-2 rounded-xl border-3 border-black focus:outline-none focus:ring-2 focus:ring-retro-pink;
+  }
+
+  .badge-retro {
+    @apply inline-block px-3 py-1 rounded-full border-2 border-black text-sm font-bold;
+  }
+}
